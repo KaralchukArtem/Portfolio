@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as M from '../../assets/materialize/js/materialize.min.js';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  options = {};
 
   ngOnInit() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, this.options);
   }
 
 }
