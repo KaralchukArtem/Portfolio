@@ -74,7 +74,7 @@
             top: 400px;
             width: 655px;
             margin-top: 41px;
-            border: 2px solid  @color-inside-heder;
+            border: 1.5px solid  @color-inside-heder;
         }
         .right-line{
             position: absolute;
@@ -82,7 +82,7 @@
             width: 645px;
             right: 0;
             margin-top: 41px;
-            border: 2px solid @color-inside-heder;
+            border: 1.5px solid @color-inside-heder;
         }
         .content-button{
             width: 31px;
@@ -98,7 +98,7 @@
 }
 
 .about{
-    margin: 60px 0px 40px 0px;
+    margin: 60px 0px 60px 0px;
     text-align: -webkit-center;
     h2{
         font-size: 48px;
@@ -109,8 +109,8 @@
         -webkit-text-stroke-color: @color-outside;
     }
     &-content{
-        text-align:justify;
-        width: 644px;
+        text-align: justify;
+        width: 630px;
         height: 505px;
         font-size: 24px;
         line-height: 1.1;
@@ -132,22 +132,22 @@
         .left-line{
             position: absolute;
             top: 15px;
-            width: 655px;
-            border: 2px solid  @color-inside-heder;
+            width: 630px;
+            border: 1.5px solid  @color-inside-heder;
         }
         .right-line{
             position: absolute;
             top: 15px;
-            width: 610px;
+            width: 624px;
             right: 0;
-            border: 2px solid  @color-inside-heder;
+            border: 1.5px solid  @color-inside-heder;
         }
         .button-up{    
             float: left;
             width: 31px;
             height: 31px;
             border-radius: 50%;
-            margin: 0px 5px 0px 49.15%;
+            margin: 0px 7px 0px 47.7%;
             border: 1px solid @color-outside;
             img{
                 margin: 5px 0px 0px 0px;
@@ -175,18 +175,136 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: @color-outside;
     }
-    .carousel-item{
-        width: 340px;
-        height: 405px;
-        background-color: @color-inside;
-        border-radius: 19px;
-        border: 1.5px solid @color-outside;
-        .content{
-            width: 337px;
-            height: 70px;
-            background-color: black;
+    .carousel{
+        margin: 50px 0px 20px 0px;
+        height: 500px;
+        .carousel-item{
+            width: 340px;
+            height: 405px;
+            background-color: @color-inside;
             border-radius: 19px;
-            border: 1.5px solid @color-outside;
+            border: 1px solid @color-outside;
+            border-top: 0px;
+            .title{
+                width: 338px;
+                height: 70px;
+                background-color: black;
+                border-radius: 19px;
+                border: 1px solid @color-outside;
+                border-left: 0px;
+                border-right: 0px;
+                p{
+                    margin-top: 7px;
+                    font-size: 36px;
+                    color: @color-outside;
+                }
+            }
+            &-content{
+                color: @color-outside;
+                .status{
+                    display: flex;
+                    float: left;
+                    width: 298px;
+                    height: 38px;
+                    background-color: @color-inside;
+                    border: 1.5px solid black;
+                    border-radius: 19px;
+                    margin: 20px 20px 0px 20px;
+                    padding-left: 15px;
+                    p{
+                        font-size: 24px;
+                    }
+                    .during{
+                        width: 108px;
+                        height: 36px;
+                        border-radius: 19px;
+                        border: 1px solid @color-outside;
+                        background-color: black;
+                        margin-left: 112px;
+                        p{
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .description{   
+                    display: block;
+                    float: left;
+                    margin: 20px 0px 0px 20px;
+                    .titlee{
+                        position: relative;
+                        left: -60px;
+                        width: 140px;
+                        height: 50px;
+                        border: 1.5px solid black;
+                        border-radius: 19px;
+                        p{
+                            font-weight: 700;
+                            font-size: 24px;
+                        }
+                    }
+                    .content{
+                        position: relative;
+                        top: -15px;
+                        width: 297px;
+                        height: 138px;
+                        border: 1px solid @color-outside;
+                        border-radius: 19px;
+                        background-color: black;
+                        padding: 7px;
+                        p{
+                            text-align: justify;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .link-block{
+                    display: flex;
+                    float: left;
+                    margin: 10px 20px 0px 20px;
+                    .demo,.github{
+                        width: 123px;
+                        height: 35px;
+                        border: 1px solid @color-outside;
+                        border-radius: 19px;
+                        background-color: black;
+                        font-size: 24px;
+                        a{
+                            color: @color-outside;
+                        }
+                    }
+                    .github{
+                        margin-left: 52px;
+                    }
+                }
+            }
+        }
+    }
+    .button__work{
+        position: relative;
+        display: flex;
+        top:-10px;
+        .left-line{
+            position: absolute;
+            top: 15px;
+            width: 650px;
+            border: 1.5px solid  @color-inside-heder;
+        }
+        .right-line{
+            position: absolute;
+            top: 15px;
+            width: 644px;
+            right: 0;
+            border: 1.5px solid  @color-inside-heder;
+        }
+        .content-button{    
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            border: 1px solid @color-outside;
+            margin: 0px 0px 0px 49.15%;
+            img{
+                margin: 7px 0.5px 0px 0px;
+            }
         }
     }
 }
