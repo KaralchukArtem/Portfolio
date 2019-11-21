@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
   options = {};
 
   ngOnInit() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, this.options);
+    var carousel = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(carousel, this.options);
   }
 
 }
