@@ -32,14 +32,68 @@
         }
         .header-block-clock::after{
             content: '';
-            margin-bottom: 5px;
             width: 100px;
-            height: 2px;
+            height: 1px;
+            margin-bottom: 5px;
             background-color: @color-white;
         }
         .header-block-news{
+            p{
             font-size: 20px;
             font-weight: 400;
+            }
+            ul{
+                display: block;
+                -ms-overflow-style: none;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                overflow: overlay;
+                height: 160px;
+                width: 130px;
+                margin-left: 20px;
+                padding-left: 10px;
+                margin-block-start: 0.5em;
+                margin-block-end: 0.5em;
+                border: 1px solid @color-black;
+                border-radius: 12px;
+                box-shadow: -9px 0px @color-black;
+            }
+            ul::-webkit-scrollbar{
+                width: 0px;
+                background: transparent;
+            }
+
+            li{
+                //list-style: none;
+                height: 29px;
+                border-bottom: 1px solid @color-white;
+                padding: 5px 5px 5px 5px;
+            }
+            a{
+                display: block;
+                color: @color-white;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: justify;
+                font-size: 14px;
+            }
+        }
+        .network{
+            display: flex;
+            li{
+                float: left;
+                width: 24px;
+                height: 24px;
+                border-radius: 100%;
+                border: 1px solid @color-white;
+                margin-left: 37px;
+                img{
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 12px;
+                }
+            }
         }
     }
     .foot-block-navbar{
@@ -48,7 +102,7 @@
         height: 140px;
         border-radius: 12px;
         padding-top: 0px;
-        text-align: center;
+        //text-align: center;
         background-color: @color-gray;
         box-shadow: -12px 0px @color-gray-light;
         li{
